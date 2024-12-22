@@ -64,12 +64,10 @@ export default function Calendar() {
             }
 
             if (eventToEdit) {
-                // Update existing event
                 updatedEvents[dateKey] = updatedEvents[dateKey].map(e =>
                     e.id === eventToEdit.id ? event : e
                 )
             } else {
-                // Add new event
                 if (updatedEvents[dateKey].length === 0) {
                     updatedEvents[dateKey].push(event)
                 } else {
@@ -180,7 +178,7 @@ export default function Calendar() {
 
             <Sheet open={isSidebarOpen} onOpenChange={setIsSidebarOpen}>
                 <SheetTrigger asChild className="md:hidden">
-                    <Button variant="outline" size="icon">
+                    <Button className='mt-4 ml-2' variant="outline" size="icon">
                         <Menu className="h-5 w-5" />
                     </Button>
                 </SheetTrigger>

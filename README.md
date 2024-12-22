@@ -2,7 +2,10 @@
 
 This project is a calendar web application that allows users to manage their events efficiently. Below is a summary of the features and instructions on how to run the app locally.
 
-**Features**
+**Deployed Link**
+https://calenderify.vercel.app/
+
+### Features
 
 1. *Add Events*:
     Users can add events on any day by selecting the desired date and filling in the event details.
